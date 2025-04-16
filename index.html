@@ -26,9 +26,31 @@
         box-sizing: inherit;
       }
 
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
       body {
         margin: 0;
-        background-color: #fff;
+        background: linear-gradient(135deg, #6fd1bd80, #ebdddb, #6fd1bd80);
+        background-size: 200% 200%;
+        animation: gradientMove 3s ease infinite;
+        color: #646369;
+        font-size: 1.6rem;
+        font-family: "Inter", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: 0.008em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
       img {
@@ -110,17 +132,6 @@
         .u-hidden\@xs-down {
           display: none !important;
         }
-      }
-
-      body {
-        color: #646369;
-        font-size: 1.6rem;
-        font-family: "Inter", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-        line-height: 1.5;
-        letter-spacing: 0.008em;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
       }
 
       h1,
@@ -530,7 +541,7 @@
           <li>
             <a
               class="Navbar-btn Navbar-btn--main"
-              href="https://drive.google.com/file/d/1P-DkAHQK_5Fr2xuVKRi3X9jCh6jynq70/view?usp=sharing"
+              href="https://drive.google.com/file/d/1iJo79ESQy6ZmLjYkqhjwytyDSHWE-0bf/view?usp=sharing"
               target="_blank"
             >
               Download
@@ -561,12 +572,12 @@
                 <br />
                 Das
               </span>
-              <span class="Title-sub">Front-end Developer</span>
+              <span class="Title-sub">Frontend Engineer</span>
             </h1>
           </a>
         </div>
         <div class="l-Header-col Contact">
-          <div>Gurgaon, India</div>
+          <div>Bengaluru, India</div>
           <div>
             <a class="u-link" href="mailto:getmanabdas@gmail.com"
               >getmanabdas@gmail.com</a
@@ -576,16 +587,17 @@
       </div>
 
       <section class="l-Section">
-        <h2 class="l-Section-title h3 u-hidden@sm-down">Profile</h2>
+        <h2 class="l-Section-title h3 u-hidden@sm-down">Summary</h2>
         <div class="l-Section-content">
           <p>
-            I’m a passionate frontend developer with an eye for design
-            aesthetics, experience in designing, developing and managing complex
-            website with responsiveness. I enjoy creating beautiful,
-            user-centered websites and web applications with a strong interest
-            in clean grid design as well as elegant typography. Good eye for
-            design and typography, high attention to detail. Great listener,
-            curious, team player.
+            Experienced Frontend Engineer with 5+ years of experience building
+            scalable, high-performance web applications for both startups and
+            global enterprises. Proven track record in delivering features to
+            500K+ users, optimizing web performance, and mentoring
+            cross-functional teams. Skilled in modern JavaScript ecosystems
+            (React, Angular, Node.js, TypeScript) and tools like GraphQL, React
+            Query, and Jest. Passionate about clean architecture, collaboration,
+            and creating delightful user experiences.
           </p>
         </div>
       </section>
@@ -602,13 +614,27 @@
             <li>
               Experienced with <strong class="Tag">JavaScript</strong>,
               <strong class="Tag">TypeScript</strong>,
-              <strong class="Tag">Frameworks</strong> (Angular) and
-              <strong class="Tag">Libraries </strong> (jQuery)
+              <strong class="Tag">Frameworks</strong> (Angular, ReactJS, NextJS,
+              NodeJS) and <strong class="Tag">Libraries </strong> (Material UI,
+              Ag-Grid, Chart.js, React Query)
+            </li>
+            <li>
+              Proficient with <strong class="Tag">databases i.e.</strong>,
+              <strong class="Tag">MongoDB</strong>,
+              <strong class="Tag">MySQL</strong>
+            </li>
+            <li>
+              Skilled in
+              <strong class="Tag">Build & Monitoring Tools i.e.</strong>,
+              <strong class="Tag">Docker</strong>,
+              <strong class="Tag">Webpack</strong>,
+              <strong class="Tag">New relic</strong>,
+              <strong class="Tag">Segment</strong>
             </li>
             <li>
               Skilled in <strong class="Tag">CSS Frameworks</strong> (Bootstrap,
               Tailwind, Materialize) and
-              <strong class="Tag">CSS Preprocessors</strong> (sass)
+              <strong class="Tag">CSS Preprocessors</strong> (Sass, Less)
             </li>
             <li>
               Proficient with
@@ -618,7 +644,7 @@
             <li>
               Experience in building user interface in
               <strong class="Tag">Component Libraries</strong>(NZ-ZORRO, Angular
-              Material).
+              Material, Prime React, Ant Design).
             </li>
             <li>
               Knowledgeable about <strong class="Tag">User Experience</strong>,
@@ -638,30 +664,76 @@
         <h2 class="l-Section-title h3">Experience</h2>
         <div class="l-Section-content">
           <div class="l-Section-group">
-            <h3>Front-end Developer</h3>
+            <h3>Software Engineer I</h3>
+            <a class="u-link" href="https://www.mckinsey.com/" target="_blank"
+              >Mckinsey & Company</a
+            >
+            (Bengaluru) <br />
+            Oct 2022 - Present
+            <ul>
+              <li>
+                Led the frontend stream for a large cloud storage client,
+                building complex dashboards with Ag-Grid and Chart.js that
+                supported 500K+ monthly users and reduced UI load time by 35%
+              </li>
+              <li>
+                Delivered a GenAI-based document review tool in just 4 sprints,
+                improving document analysis efficiency by 60% for internal
+                consulting teams
+              </li>
+              <li>
+                Built and optimized a mobile threat prevention app for a global
+                people search client; improved app stability by 50%, reduced
+                crash rate from 4.2% to 1.1%, and cut app launch time by 75%
+              </li>
+              <li>
+                Mentored junior developers and drove frontend best practices
+                around Code Splitting, Lazy loading, monitoring performance, and
+                web core vitals.
+              </li>
+              <li>
+                Created a reusable components which got adopted across multiple
+                projects, resulting in a 30% faster feature delivery cycle and
+                significantly reducing redundant code.
+              </li>
+              <li>
+                Acted as technical bridge between engineering, design, and
+                leadership teams - leading weekly solution walkthroughs and
+                aligning technical decisions with business priorities.
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-Section-group">
+            <h3>Frontend Engineer</h3>
             <a class="u-link" href="https://easyeat.ai/" target="_blank"
               >EasyEat PTE LTD</a
             >
             (Gurgaon) <br />
-            Apr 2020 - Present
+            Apr 2020 - Sep 2022
             <ul>
               <li>
-                Implemented new responsive designs, mobile-first approach which
-                increased mobile traffic by 20%.
+                Developed 12+ Angular modules for the Partner Portal used by
+                10,000+ daily food vendors in Southeast Asia
               </li>
               <li>
-                Developed new features modules in Angular for Easyeat Partner
-                portal as per business requirement to allow end users for easier
-                management.
+                Rebuilt the mobile UI with a responsive-first approach,
+                resulting in an 85% increase in mobile engagement and a 22%
+                reduction in bounce rate.
               </li>
               <li>
-                Managed whole frontend codebase, updated and improved existing
-                websites and developed new analytics dashboard with google
-                charts.
+                Collaborated with backend engineers to optimize API response
+                times by 30%, resulting in faster dashboard rendering and
+                improved user experience.
               </li>
               <li>
-                Collaborated with product team and backend team members for new
-                feature developments, best practices and work flow
+                Implemented New Relic and Segment for real-time performance
+                tracking and analytics, improving issue response time by 50%
+              </li>
+              <li>
+                Reduced technical debt by refactoring legacy code and
+                introducing stricter linting and testing protocols(Jest,
+                Jasmine)
               </li>
             </ul>
           </div>
@@ -688,6 +760,32 @@
                 process.
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="l-Section">
+        <h2 class="l-Section-title h3">Certification</h2>
+        <div class="l-Section-content">
+          <div class="l-Section-group">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <a
+              class="u-link"
+              href="https://www.credly.com/badges/393cbd93-2101-42dd-856b-e64652cf1fb7"
+              target="_blank"
+              >Amazon Web Services (AWS)</a
+            ><br />
+            2023 - 2026
+          </div>
+          <div class="l-Section-group">
+            <h3>AWS Certified - Developer Associate</h3>
+            <a
+              class="u-link"
+              href="https://www.credly.com/badges/393cbd93-2101-42dd-856b-e64652cf1fb7"
+              target="_blank"
+              >Amazon Web Services (AWS)</a
+            ><br />
+            2023 - 2026
           </div>
         </div>
       </section>
